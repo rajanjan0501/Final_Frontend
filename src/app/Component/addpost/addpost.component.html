@@ -1,0 +1,32 @@
+<!-- blog-post-form.component.html -->
+<form class="blog-post-form" #blogPostForm="ngForm" (ngSubmit)="onSubmit()" style="text-align:center; background-color: lightgoldenrodyellow;">
+   <h2 style="text-align:center"><b>Upload New Post</b></h2>
+    <div class="form-group" >
+        <label for="title">Title:</label>
+        <input type="text" id="title" name="title" [(ngModel)]="blogPost.title" required>
+    </div>
+    <div class="form-group">
+        <label for="content">Content:</label>
+        <textarea id="content" name="content" [(ngModel)]="blogPost.content" required></textarea>
+    </div>
+    <div class="form-group">
+        <label for="author">Author:</label>
+        <input type="text" id="author" name="author" [(ngModel)]="blogPost.author" required>
+    </div>
+    <div class="form-group">
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" style="text-align:center" [(ngModel)]="blogPost.date" required>
+    </div>
+    <div class="form-group">
+        <label for="tags">Tags:</label>
+        <input type="text" id="tags" name="tags" [(ngModel)]="blogPost.tags" required>
+    </div>
+    <div class="form-group">
+        <label for="url">URL:</label>
+        <input type="url" id="url" name="url" [(ngModel)]="blogPost.url">
+    </div>
+    <div class="form-actions">
+        <button type="submit" style="background-color:aqua;" [disabled]="blogPostForm.invalid">Submit</button>
+        <button routerLink="/posts" style="background-color: red;">Back</button>
+    </div>
+</form>

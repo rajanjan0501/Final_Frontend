@@ -1,0 +1,45 @@
+<div class="ab" style="background-image: url(./assets/c.jpg);">
+  <div class="registration-container" >
+    <h2 style="color: white;">Registration</h2>
+    
+    <form (ngSubmit)="onSubmit(registrationForm.value)" #registrationForm="ngForm">
+      <div class="form-group">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="fName" placeholder="Enter First Name..." name="fName" [(ngModel)]="reg.fName" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lName" placeholder="Enter Last Name..." name="lName" [(ngModel)]="reg.lName" required>
+      </div>
+  
+         
+      <div class="form-group">
+        <label for="username">Username:</label>
+        <input type="text" id="username" placeholder="Enter Username..." name="username" [(ngModel)]="reg.username" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Enter Email..." name="email" [(ngModel)]="reg.email" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" placeholder="Enter Password..." name="password" [(ngModel)]="reg.password" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="confirmPassword">Confirm Password:</label>
+        <input type="password" id="cnfrmPassword" placeholder="Enter Confirm Password..." name="cnfrmPassword" [(ngModel)]="reg.cnfrmPassword" required>
+      </div>
+      
+      <div class="error-message" *ngIf="registrationForm.invalid && (registrationForm.dirty || registrationForm.touched)">
+        Please fill out all the required fields and ensure passwords match.
+      </div>
+      
+      <button type="submit" [disabled]="registrationForm.invalid">Register</button>
+    </form>
+  </div>
+  </div>
+  
