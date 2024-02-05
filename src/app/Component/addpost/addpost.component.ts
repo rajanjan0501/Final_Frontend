@@ -1,11 +1,12 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+
 import { addBlog } from '../../model/addBlog';
 import { AddblogService } from '../../Service/addblog.service';
 import { DataService } from '../../Service/data.service';
 import { CrudService } from '../../Service/crud.service';
 import { Router, RouterModule } from '@angular/router';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-addpost',

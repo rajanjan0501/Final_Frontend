@@ -1,8 +1,10 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark" >
-  <div class="container-fluid" style="background-color: black ; height:70px;">
+<nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="light" >
+
+
+  <div class="container-fluid" style="background-color: lightblue ; height:70px;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
     <a class="navbar-brand" routerLink="" >
         <img src="./assets/logo.png" width="40" height="30" class="d-inline-block align-text-top" >
-        <b> Vibrant Blogs</b>
+        <b> Empower Quest</b>
       </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -10,23 +12,25 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav  me-auto mb-2 mb-lg-0">
         <li class="nav-item" >
-          <a class="nav-link active" aria-current="page" routerLink="posts" ><b>Blogs</b></a>
+          <a class="nav-link active" aria-current="page" routerLink="posts" ><b>Articles</b></a>
         </li>
         <li class="nav-item" >
-          <a class="nav-link active" aria-current="page" routerLink="addpost" ><b>Add Blog</b></a>
+          <a class="nav-link active" aria-current="page" routerLink="addpost" ><b>Add an Article</b></a>
         </li>
+
+        <div style="margin-left:770px; width: 50px ;">
         <li>
-          <button *ngIf="isVisible" style="margin-left:1030%; margin-top: 5.4px; background-color: red;" (click)="toggleVis()" routerLink="/">logout</button>
+          
+          <button *ngIf="isVisible" style="margin: left 630%; margin-top: 5.4px; width: 75px;  background-color:orangered;" (click)="toggleVis()" routerLink="/">Logout</button>
 
         </li>
+        </div>
        
-        <!-- <li class="nav-item" style="margin-left: 850px;">
-          <a class="nav-link active" routerLink="#">Login</a>
-        </li> -->
+      
       </ul>
       <div>
         <button type="button" (click)="toggleVisibility()">
-          <img src="./assets/mat.png" style="height: 30px; width: 35px;" />
+          <img src="./assets/user.jpeg" style="height: 30px; width: 35px;" />
         </button>
       </div>
     </div>

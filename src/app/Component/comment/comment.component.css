@@ -73,12 +73,14 @@ input, textarea {
 
 button {
   padding: 10px 15px;
-  background-color: #4CAF50;
+  background-color: blue;
   color: #fff;
   border: none;
   border-radius: 5px;
   font-size: 16px;
   cursor: pointer;
+  display: block;
+  margin: auto;
 }
 
 button:hover {

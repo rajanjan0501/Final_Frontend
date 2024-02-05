@@ -1,44 +1,45 @@
-<div class="ab" style="background-image: url(./assets/c.jpg);">
+<div class="ab" style="background-image: url(./assets/registration.png);">
   <div class="registration-container" >
-    <h2 style="color: white;">Registration</h2>
+    <h2 style="color: white;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Registration</h2>
     
     <form (ngSubmit)="onSubmit(registrationForm.value)" #registrationForm="ngForm">
       <div class="form-group">
-        <label for="firstName">First Name:</label>
+        <label for="firstName" style="text-align: left;font-style:italic;font-family: cursive;font-size:x-large;">First Name: </label>
         <input type="text" id="fName" placeholder="Enter First Name..." name="fName" [(ngModel)]="reg.fName" required>
       </div>
       
       <div class="form-group">
-        <label for="lastName">Last Name:</label>
+        <label for="lastName" style="text-align: left;font-style:italic;font-family: cursive;font-size:x-large;">Last Name:</label>
         <input type="text" id="lName" placeholder="Enter Last Name..." name="lName" [(ngModel)]="reg.lName" required>
       </div>
   
          
       <div class="form-group">
-        <label for="username">Username:</label>
+        <label for="username" style="text-align: left;font-style:italic;font-family: cursive;font-size:x-large;">Username:</label>
         <input type="text" id="username" placeholder="Enter Username..." name="username" [(ngModel)]="reg.username" required>
       </div>
   
       <div class="form-group">
-        <label for="email">Email:</label>
+        <label for="email" style="text-align: left;font-style:italic;font-family: cursive;font-size:x-large;">Email:</label>
         <input type="email" id="email" placeholder="Enter Email..." name="email" [(ngModel)]="reg.email" required>
       </div>
       
       <div class="form-group">
-        <label for="password">Password:</label>
+        <label for="password" style="text-align: left;font-style:italic;font-family: cursive;font-size:x-large;">Password:</label>
         <input type="password" id="password" placeholder="Enter Password..." name="password" [(ngModel)]="reg.password" required>
       </div>
       
       <div class="form-group">
-        <label for="confirmPassword">Confirm Password:</label>
+        <label for="confirmPassword" style="text-align: left;font-style:italic;font-family: cursive;font-size:x-large;">Confirm Password:</label>
         <input type="password" id="cnfrmPassword" placeholder="Enter Confirm Password..." name="cnfrmPassword" [(ngModel)]="reg.cnfrmPassword" required>
       </div>
       
       <div class="error-message" *ngIf="registrationForm.invalid && (registrationForm.dirty || registrationForm.touched)">
-        Please fill out all the required fields and ensure passwords match.
+        All Fields Are Mandatory !!!
       </div>
-      
-      <button type="submit" [disabled]="registrationForm.invalid">Register</button>
+      <b>
+      <button type="submit"  [disabled]="registrationForm.invalid">Register</button>
+      </b>
     </form>
   </div>
   </div>

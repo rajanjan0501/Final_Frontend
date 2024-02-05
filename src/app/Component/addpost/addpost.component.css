@@ -7,9 +7,12 @@
 .blog-post-form {
     width: 40%; 
     margin: auto;
-    border: 1px solid black; 
+    border: 4px solid black; 
+    border-radius: 20px;
     padding: 20px; 
-    background-color: lightgray;
+    background-color:blue;
+    /* margin-top: 50px;
+    margin-bottom: 50px; */
 }
 
 
@@ -32,11 +35,15 @@ textarea {
     font-size: 14px;
 }
 
-button {
+ button {
     padding: 8px 20px;
     margin-right: 10px;
     cursor: pointer;
-}
+    /* color: white ;
+     */
+} 
+
+
 
 .form-actions {
     margin-top: 20px;

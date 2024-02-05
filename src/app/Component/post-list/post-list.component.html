@@ -1,41 +1,41 @@
-<div class="a" style="background-image: url(./assets/b.jpg);">
-<div class="container" style="width:auto; margin: auto; ">
-
-    <h1><b><i>Indian Blogs</i></b></h1>
-    <br>
-    <ng-container *ngFor="let data of Data">
-
-        <div class="news-container">
-
-            <div class="news-card" style="background-image: url(./assets/e.avif);">
-
-                <div>
-
-                    <img [src]="data.url" style="width:70%; height:230px;">
-
+<div class="a" style="background-image: url(./assets/dashboard.jpg);">
+    <div class="container" style="width:auto; margin: auto; ">
+    
+        <h1 style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ; color:white" ><b> Redefine Yourself With Us !!!</b></h1>
+        <br>
+        <ng-container *ngFor="let data of Data">
+    
+            <div class="news-container">
+    
+                <div class="news-card" style="background-image: url(./assets/e.avif);">
+    
+                    <div>
+    
+                        <img [src]="data.url" style="width:70%; height:230px;">
+    
+                    </div>
+    
+                    <div class="card-body">
+    
+                    <p class="card-text"><b> {{data.title}}</b></p>
+    
+                    <p class="card-text"> {{data.author}}</p>
+    
+                    </div>
+    
+                    <div class="news-buttons">
+    
+                        <button class="btn btn-outline-warning"  routerLink='/comment/{{data.id}}'>Add Comment</button>
+    
+                        <button class="btn btn-outline-success" routerLink = '/detail/{{data.id}}'>Details</button>
+    
+                    </div>
+    
                 </div>
-
-                <div class="card-body">
-
-                <p class="card-text"><b> {{data.title}}</b></p>
-
-                <p class="card-text"> {{data.author}}</p>
-
-                </div>
-
-                <div class="news-buttons">
-
-                    <button class="btn btn-read" routerLink='/comment/{{data.id}}'>Add Comment</button>
-
-                    <button class="btn btn-detail" routerLink = '/detail/{{data.id}}'>Details</button>
-
-                </div>
-
-            </div>
-
-        </div>  
-
-    </ng-container>
-
-</div>
-</div>
+    
+            </div>  
+    
+        </ng-container>
+    
+    </div>
+    </div>

@@ -1,7 +1,8 @@
-/* .a{
-  
-  background-color: red;
-} */
+.a{
+  background-repeat: no-repeat;
+ background-size: 200%;
+ background-position: center;
+}
 .container {
     margin: 100px 10px;
     padding: 10px 10px;
@@ -19,7 +20,7 @@
     margin: 10px 10px;
     border-radius: 10px;
     background-color: #f8f9f9;
-    border: 5px solid black;
+    border: 1px solid black;
   }
   .course-card {
     width: 220px;
@@ -36,16 +37,17 @@
   .btn {
     width: 200px;
     height: 40px;
-    border: none;
+   /* border: none; */
     margin: 5px 3px;
+    border-width:2px;
   }
  
-  .btn-read {
+  /* .btn-read {
     background-color: #ec7063;
   }
   .btn-detail {
     background-color: #abebc6;
-  }
+  } */
   h1{
     font-family: 'Poppins', sans-serif;
     font-size: 4 rem;
