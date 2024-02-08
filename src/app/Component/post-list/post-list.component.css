@@ -15,16 +15,16 @@
   }
  
   .news-card {
-    width: 500px;
-    height: 400px;
+    width: 350px;
+    height: 370px;
     margin: 10px 10px;
     border-radius: 10px;
     background-color: #f8f9f9;
     border: 1px solid black;
   }
   .course-card {
-    width: 220px;
-    height: 320px;
+    width: 150px;
+    height: 130px;
     margin: 10px 10px;
     background-color: #f8f9f9;
     border: 3px solid black;
@@ -35,7 +35,7 @@
     justify-content: center;
   }
   .btn {
-    width: 200px;
+    width: 150px;
     height: 40px;
    /* border: none; */
     margin: 5px 3px;

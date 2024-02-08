@@ -1,4 +1,4 @@
-<div style="background-image: url(./assets/login.jpeg);">
+<!-- <div style="background-image: url(./assets/login.jpeg);">
   <div class="ab" >
   <form #loginForm="ngForm" (ngSubmit)="onSubmit()">
       <h2 style="text-align: center; color: black;font-size: 45px; font-family:sans-serif">Login</h2>
@@ -30,4 +30,122 @@
   
   
   
+   -->
+
+
+
+   <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <br>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+      background-image: url(./assets/login.jpeg);
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .login-container {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    h2 {
+      color: black;
+      font-size: 45px;
+      font-family: sans-serif;
+    }
+
+    label {
+      color: black;
+      text-align: left;
+      font-style: italic;
+      font-family: cursive;
+      font-size: x-large;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin: 5px 0;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 5px;
+  background-color: #28a745;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, transform 0.2s;
+}
+
+button:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+}
+
+button:hover {
+  background-color: #218838;
+  color: #f8f9fa;
+}
+
+button:active {
+  transform: translateY(2px);
+}
+
+
+    .register-text {
+      width: 100%;
+      text-align: center;
+      color: black;
+      font-family: cursive;
+    }
+
+    .register-link {
+      color: black;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <form #loginForm="ngForm" (ngSubmit)="onSubmit()">
+      <h2>Login</h2>
+      <label for="username">Username:</label>
+      <input type="text" id="username" placeholder="Enter UserName..." name="username" [(ngModel)]="credentials.username"/>
   
+      <label for="password">Password:</label>
+      <input type="password" id="password" placeholder="Enter Password..." name="password" [(ngModel)]="credentials.password"/>
+  
+      <button type="submit" class="btn btn-outline-success" [disabled]="!loginForm.valid">Login</button>
+      
+      <div class="register-text">
+        New User? Please Register
+        <p class="register-link" type="button" routerLink="/register">Register</p>
+      </div>
+    </form>
+  </div>
+</body>
+</html>

@@ -1,4 +1,4 @@
-.ab{
+ .ab{
   display: flex;
   justify-content: center;
     align-items: center;
@@ -15,12 +15,13 @@
     border: 3px solid white;
     border-radius: 5px;
     box-shadow: 0 0 70px white;
+    background-color: lightblue;
     
   }
   
   h2 {
     text-align: center;
-    color: white;
+    color: black;
   }
   
   .form-group {
@@ -31,7 +32,7 @@
   label {
     display: block;
     margin-bottom: 5px;
-    color: white
+    color: black
   }
   
   input {
@@ -48,22 +49,38 @@
     margin-top: 10px;
   }
   
-  button {
+  /* button {
     padding: 10px;
     background-color: #4caf50;
     color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+  } */
+
+  button {
+    margin-top: 15px; 
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: auto; 
+    display: block; 
   }
+  
   
   button:disabled {
     background-color: red;
     
   }
   
-  /* Add hover effect for the button */
+   
    button:hover {
     background-color: #45a049;
   } 
-   
+    
+
+    
+    

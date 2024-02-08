@@ -9,7 +9,7 @@ export class LoginService {
   constructor(private http:HttpClient) { }
   generateToken(credentials:any)
   {
-    return this.http.post(`http://localhost:9093/auth/login`,credentials)
+    return this.http.post(`http://localhost:8083/auth/login`,credentials)
   }
   loginUser(token)
   {

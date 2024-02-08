@@ -9,8 +9,9 @@
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
+    
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav  me-auto mb-2 mb-lg-0">
+       <ul class="navbar-nav  me-auto mb-2 mb-lg-0">
         <li class="nav-item" >
           <a class="nav-link active" aria-current="page" routerLink="posts" ><b>Articles</b></a>
         </li>
@@ -21,18 +22,21 @@
         <div style="margin-left:770px; width: 50px ;">
         <li>
           
-          <button *ngIf="isVisible" style="margin: left 630%; margin-top: 5.4px; width: 75px;  background-color:orangered;" (click)="toggleVis()" routerLink="/">Logout</button>
+          <button style="margin: left 630%; margin-top: 5.4px; width: 80px;height: 50px;  background-color:lightblue;" (click)="toggleVis()" routerLink="/">
+            <!-- <img src="./assets/user.jpeg" style="height: 30px; width: 35px;" /> -->
+
+           <i class = "fas fa-sign-out-alt"></i>   Logout</button>
 
         </li>
         </div>
        
       
       </ul>
-      <div>
+      <!-- <div>
         <button type="button" (click)="toggleVisibility()">
           <img src="./assets/user.jpeg" style="height: 30px; width: 35px;" />
         </button>
-      </div>
+      </div> -->
     </div>
   </div>
 </nav>

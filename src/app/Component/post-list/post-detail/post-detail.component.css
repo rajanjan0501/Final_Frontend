@@ -6,15 +6,57 @@ justify-content: center;
   height: auto;
   
 }
-.card{
-  width: 400px;
+
+
+.card {
+  width: 80px; 
   height: auto;
   background-color: beige;
-  margin-top: 60px;
-  margin-bottom: 60px;
-  padding: 40px;
-  border: 3px solid gold;
+  margin-top: 20px; 
+  margin-bottom: 20px; 
+  padding: 20px; 
+  border: 2px solid black; 
   border-radius: 5px;
-  box-shadow: 0 0 30px gold;
+  box-shadow: 0 0 15px white; 
 }
+
+
+
+.button {
+  text-align: center;
+  margin-top: 20px; 
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px; 
+  font-size: 16px;
+  width: 80%;
+  text-decoration: none;
+  border: 2px solid green;
+  color: green;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: green;
+  color: white;
+}
+
+.btn:active {
+  transform: translateY(2px);
+}
+
+.btn:focus {
+  outline: none;
+}
+
+
+.btn-outline-success {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 

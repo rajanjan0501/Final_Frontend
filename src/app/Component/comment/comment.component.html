@@ -1,26 +1,30 @@
-<div class="ab" style="background-image: url(./assets/comment.jpg);">
+<div class="ab" style="background-image: url(./assets/comment.jpg);background-size: 95%;">
     <div class="comments-container">
-        <h3 style="color: gold; font-family: cursive;font-size: x-large;">Comments</h3>
-        <div *ngFor="let com of comm" class="comment-item" style="color: gold;font-family: cursive;font-size: large;">
+        <h2 style="color: black; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size: xxx-large;text-align: center;text-decoration: underline;">Comments</h2>
+        <br>
+        <div *ngFor="let com of comm" class="comment-item" style="color: black;font-family: cursive;font-size: large;">
             <strong><h5><b>Name:</b> {{ com.name }}  </h5></strong>
             <strong><h5><b>Comment:</b> {{ com.comment }} </h5></strong>
         <p>{{ com.text }}</p>
         </div>
         <div class="add-comment">
-        <h4 style="color: gold;font-family: cursive;font-size: larger;">Add a Comment</h4>
+        <h4 style="color: black;font-family: cursive;font-size: larger;">Add a Comment</h4>
         <form>
         <div class="form-group">
-        <label for="author" style="color: gold;font-family: cursive;font-size: large;">Name</label>
+        <label for="author" style="color: black;font-family: cursive;font-size: large;">Name</label>
         <input type="text" id="name" name="name" [(ngModel)]="comme.name" required>
         </div>
         <div class="form-group">
-        <label for="commentText" style="color:gold;font-family: cursive;font-size: large;">Comment</label>
+        <label for="commentText" style="color:black;font-family: cursive;font-size: large;">Comment</label>
         <textarea (blur)=" onChangeFileField($event)" id="commentText" name="commentText" [(ngModel)]="comme.comment" required></textarea>
         </div>
         
         <br>
+        <br>
+        <br>
         
         <button type="submit" (click)="addComm()">Submit</button>
+        <br>
         </form>
         </div>
         </div>

@@ -3,17 +3,21 @@
     
         <h1 style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ; color:white" ><b> Redefine Yourself With Us !!!</b></h1>
         <br>
+
         <ng-container *ngFor="let data of Data">
     
             <div class="news-container">
     
                 <div class="news-card" style="background-image: url(./assets/e.avif);">
+                    <br>
     
                     <div>
     
-                        <img [src]="data.url" style="width:70%; height:230px;">
+                        <!-- <img [src]="data.url" style="width:70%; height:230px;"> -->
+                        <img [src]="data.url" style="width:70%; height:150px; border-radius: 5px; border: 2px solid black;" >
     
                     </div>
+                    <br>
     
                     <div class="card-body">
     
@@ -22,6 +26,7 @@
                     <p class="card-text"> {{data.author}}</p>
     
                     </div>
+                    <br>
     
                     <div class="news-buttons">
     

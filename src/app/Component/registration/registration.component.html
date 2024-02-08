@@ -1,6 +1,7 @@
-<div class="ab" style="background-image: url(./assets/registration.png);">
+ <div class="ab" style="background-image: url(./assets/reg.jpg);">
   <div class="registration-container" >
-    <h2 style="color: white;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Registration</h2>
+
+    <h2 style="color: black;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;text-decoration:underline;">Registration</h2>
     
     <form (ngSubmit)="onSubmit(registrationForm.value)" #registrationForm="ngForm">
       <div class="form-group">
@@ -38,9 +39,12 @@
         All Fields Are Mandatory !!!
       </div>
       <b>
-      <button type="submit"  [disabled]="registrationForm.invalid">Register</button>
+        <br>
+      <button  type="submit"  [disabled]="registrationForm.invalid">Register</button>
       </b>
     </form>
   </div>
   </div>
-  
+   
+
+    
