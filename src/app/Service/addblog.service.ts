@@ -38,7 +38,7 @@ export class AddblogService {
     return this.httpcl.post(this.baseUrl, postData);
   }
 
-  baseUrl1 = "http://localhost:8084/dashboard/showBlogs";
+  baseUrl1 = "http://dashboard-anjan.itcblogs.xyz/dashboard/showBlogs";
 
   public getPosts() {
     return this.httpcl.get<addBlog[]>(this.baseUrl1); 

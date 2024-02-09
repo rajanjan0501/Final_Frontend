@@ -7,7 +7,7 @@ import { map, Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class CrudService {
-  baseUrl="http://localhost:8083/auth/register"
+  baseUrl="http://login-anjan.itcblogs.xyz/auth/register"    
   constructor(private httpcl:HttpClient)  { }
   registerUser(reg:register):Observable<Object>{
     console.log(reg)
