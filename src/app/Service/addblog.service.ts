@@ -30,7 +30,7 @@ export class AddblogService {
     console.log(this.token)
     return headers;
   }
-  baseUrl = "http://localhost:8084/dashboard/addBlogs"; 
+  baseUrl = "http://dashboard-anjan.itcblogs.xyz/dashboard/addBlogs"; 
 
   public addPosts(postData: any): Observable<Object> { 
     console.log(postData); 
